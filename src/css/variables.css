@@ -1,0 +1,7 @@
+:root{
+    --text-color:hsl(193, 38%, 86%);
+    --link-color:hsl(150, 100%, 66%);
+
+    --neutral-dark: hsl(218, 23%, 16%);
+    --neutral-mediun:hsl(217, 19%, 24%);
+}

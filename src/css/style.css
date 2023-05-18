@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+body{
+    background-color: var(--neutral-dark);
+    height: 100vh;
+    font-family: 'Manrope', sans-serif;
+}
+
+.container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+}
+
+.container .card{
+    display: flex;
+    background-color: var(--neutral-mediun);
+    flex-direction: column;
+    border-radius: 10px;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    width: 537px;
+    height: 330px;
+    padding: 30px;
+}
+.card .tituloLink{
+   color: var(--link-color);
+   padding-top: 30px;
+}
+.card .text{
+    color: var(--text-color);
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.card .imgDesk{
+    padding-bottom: 30px;
+}
+.card .adviceUpdate{
+    display: flex;
+    background-color: var(--link-color);
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: -25px;
+    border: none;
+}
+ .card .adviceUpdate:hover{
+    color: #53FFAB;
+    cursor: pointer;
+    box-shadow: 0 5px 15px var(--link-color); 
+} 
+/* - **Por que foi escolhido min-width: 768px no media query? E o que é padding-inline?**
+    
+    Pelo fato de ser um simples componente centralizado e flexível, optei por aplicar um uma largura e um padding apenas dispositivos maiores. Assim, mantendo o aspecto em tablets e celulares. O padding-inline adiciona um espaçamento interno tanto na esquerda, quanto direita. */
+@media(min-width:768px){
+    .card{
+        padding-inline: 50px;
+        width: 386px;
+    }
+    .card .text{
+        font-size: 21px;
+        padding: 26px;
+    }
+}
+
